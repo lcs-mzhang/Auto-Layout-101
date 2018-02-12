@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -97,19 +96,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krP-zF-4I1">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.049691020333036739" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="D0GQ9Jl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xwK-ge-Cvi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="517"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cb5-c7-hQQ">
+                                <rect key="frame" x="167.5" y="567" width="40" height="30"/>
+                                <state key="normal" title="Share"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBn-LO-Vws">
+                                <rect key="frame" x="288" y="605" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5S-oq-UYp">
+                                <rect key="frame" x="64.5" y="567" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="krP-zF-4I1" secondAttribute="trailing" constant="-241" id="4fd-QK-dqZ"/>
-                            <constraint firstAttribute="trailing" secondItem="krP-zF-4I1" secondAttribute="trailing" id="E96-Ni-Eal"/>
-                            <constraint firstItem="krP-zF-4I1" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leadingMargin" constant="-16" id="KM4-qg-7kN"/>
-                            <constraint firstAttribute="bottom" secondItem="krP-zF-4I1" secondAttribute="bottom" id="PL4-lp-g6y"/>
-                            <constraint firstItem="krP-zF-4I1" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="eIu-61-MS0"/>
-                            <constraint firstItem="krP-zF-4I1" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leading" constant="40" id="gwv-4z-KIY"/>
+                            <constraint firstItem="xwK-ge-Cvi" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leading" id="3xZ-FT-wpd"/>
+                            <constraint firstItem="Cb5-c7-hQQ" firstAttribute="centerX" secondItem="xwK-ge-Cvi" secondAttribute="centerX" id="DUK-ev-VWD"/>
+                            <constraint firstAttribute="bottom" secondItem="xwK-ge-Cvi" secondAttribute="bottom" constant="150" id="I7T-Kt-bzQ"/>
+                            <constraint firstItem="f5S-oq-UYp" firstAttribute="centerY" secondItem="Cb5-c7-hQQ" secondAttribute="centerY" id="JIj-vd-8IN"/>
+                            <constraint firstItem="Cb5-c7-hQQ" firstAttribute="top" secondItem="xwK-ge-Cvi" secondAttribute="bottom" constant="50" id="JdG-oK-zCr"/>
+                            <constraint firstItem="f5S-oq-UYp" firstAttribute="centerX" secondItem="Cb5-c7-hQQ" secondAttribute="centerX" multiplier="1/2" id="KPE-uF-mnC"/>
+                            <constraint firstAttribute="trailing" secondItem="xwK-ge-Cvi" secondAttribute="trailing" id="ZbW-4U-XXX"/>
+                            <constraint firstItem="xwK-ge-Cvi" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="e5O-tT-2WL"/>
+                            <constraint firstItem="RBn-LO-Vws" firstAttribute="centerX" secondItem="Cb5-c7-hQQ" secondAttribute="centerX" multiplier="1.5" id="eHB-Hw-9jw"/>
+                            <constraint firstItem="RBn-LO-Vws" firstAttribute="centerY" secondItem="Cb5-c7-hQQ" secondAttribute="centerY" id="mkF-1J-kZP"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -126,6 +140,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="D0GQ9Jl.jpg" width="463" height="463"/>
         <image name="Heart.png" width="60" height="60"/>
     </resources>
 </document>
